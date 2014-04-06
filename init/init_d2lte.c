@@ -126,7 +126,6 @@ void vendor_load_properties()
         property_set("ro.build.description", "d2vzw-user 4.3 JSS15J I535VRUCML1 release-keys");
         property_set("ro.product.model", "SCH-I535");
         property_set("ro.product.device", "d2vzw");
-<<<<<<< HEAD
         property_set("ro.telephony.default_cdma_sub", "0");
         property_set("ro.cdma.home.operator.alpha", "Verizon");
         property_set("ro.cdma.home.operator.numeric", "310004");
@@ -142,15 +141,6 @@ void vendor_load_properties()
         property_set("ro.telephony.default_network", "9");
         property_set("ro.ril.enable.dcm.feature", "1");
         property_set("ro.config.libemoji", "libemoji_docomo.so");
-=======
-    } else if (strstr(bootloader, "S968C")) {
-        /* d2vzw - straighttalk */
-        cdma_properties("1", "4", "310000", "TracFone", "0");
-        property_set("ro.build.fingerprint", "Verizon/d2vzw/d2vzw:4.3/JSS15J/I535VRUCML1:user/release-keys");
-        property_set("ro.build.description", "d2vzw-user 4.3 JSS15J I535VRUCML1 release-keys");
-        property_set("ro.product.model", "SCH-S968C");
-        property_set("ro.product.device", "d2vzw");
->>>>>>> FETCH_HEAD
     }
 
     property_get("ro.product.device", device);
