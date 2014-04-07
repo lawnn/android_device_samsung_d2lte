@@ -76,14 +76,6 @@ void vendor_load_properties()
         property_set("ro.build.description", "d2cri-user 4.1.2 JZO54K R530CVVBMD6 release-keys");
         property_set("ro.product.model", "SCH-R530C");
         property_set("ro.product.device", "d2cri");
-    } else if (strstr(bootloader, "SC06D")) {
-        /* d2dcm */
-        gsm_properties();
-        property_set("ro.build.fingerprint", "samsung/d2om/d2dcm:4.1.2/JZO54K/SC06DOMBMF1:user/release-keys");
-        property_set("ro.build.description", "d2om-user 4.1.2 JZO54K SC06DOMBMF1 release-keys");
-        property_set("ro.product.model", "SC-06D");
-        property_set("ro.product.device", "d2dcm");
-        property_set("ro.ril.enable.dcm.feature", "1");
     }  else if (strstr(bootloader, "R530M")) {
         /* d2mtr */
         cdma_properties("0", "8", "311660", "MetroPCS", "0");
