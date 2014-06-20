@@ -88,7 +88,7 @@ lib/libgeofence.so
 lib/libloc_api_v02.so
 
 # NFC
-lib/hw/nfc.MSM8960.so
+#lib/hw/nfc.MSM8960.so
 #vendor/firmware/libpn544_fw.so
 
 # Sensors
