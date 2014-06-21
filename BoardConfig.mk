@@ -110,7 +110,7 @@ endif
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/d2lte/releasetools
 
 #TWRP
-TARGET_RECOVERY_FSTAB := device/samsung/d2lte/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/samsung/d2lte/rootdir/etc/twrp.fstab
 DEVICE_RESOLUTION := 720x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
