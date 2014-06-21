@@ -49,7 +49,12 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
+#BOARD_USE_OLD_FSTAB :=true
+ifneq ($(BOARD_USE_OLD_FSTAB),true)
 TARGET_RECOVERY_FSTAB := device/samsung/d2lte/rootdir/etc/fstab.qcom
+else
+TARGET_RECOVERY_FSTAB := device/samsung/d2lte/rootdir/etc/twrp.fstab
+endif
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
@@ -110,7 +115,6 @@ endif
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/d2lte/releasetools
 
 #TWRP
-TARGET_RECOVERY_FSTAB := device/samsung/d2lte/rootdir/etc/twrp.fstab
 DEVICE_RESOLUTION := 720x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
