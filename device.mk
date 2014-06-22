@@ -148,7 +148,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_1="" \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
-    dalvik.vm.dexopt-data-only=0
+    dalvik.vm.dexopt-data-only=0 \
+    persist.sys.strictmode.visual=0 \
+    persist.sys.strictmode.disable=1
 
 ifneq ($(TARGET_PRODUCT),cm_apexqtmo)
 PRODUCT_PROPERTY_OVERRIDES += \
