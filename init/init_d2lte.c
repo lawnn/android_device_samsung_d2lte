@@ -118,11 +118,6 @@ void vendor_load_properties()
         property_set("ro.build.description", "d2vzw-user 4.4.2 KOT49H I535VRUDNE1 release-keys");
         property_set("ro.product.model", "SCH-I535");
         property_set("ro.product.device", "d2vzw");
-        property_set("ro.telephony.default_cdma_sub", "0");
-        property_set("ro.cdma.home.operator.alpha", "Verizon");
-        property_set("ro.cdma.home.operator.numeric", "310004");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_set("ro.telephony.default_network", "10");
     } else if (strstr(bootloader, "SC06D")) {
         /* d2dcm */
         gsm_properties();
@@ -136,6 +131,20 @@ void vendor_load_properties()
         property_set("ro.config.libemoji", "libemoji_docomo.so");
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnGsmDevice", "1");
+    } else if (strstr(bootloader, "S968C")) {
+        /* d2vzw - straighttalk */
+        cdma_properties("1", "4", "310000", "TracFone", "0");
+        property_set("ro.build.fingerprint", "Verizon/d2vzw/d2vzw:4.3/JSS15J/I535VRUCML1:user/release-keys");
+        property_set("ro.build.description", "d2vzw-user 4.3 JSS15J I535VRUCML1 release-keys");
+        property_set("ro.product.model", "SCH-S968C");
+        property_set("ro.product.device", "d2vzw");
+    } else if (strstr(bootloader, "I547")) {
+        /* comanche */
+        gsm_properties();
+        property_set("ro.build.fingerprint", "samsung/comancheuc/comancheatt:4.1.2/JZO54K/I547UCCMH5:user/release-keys");
+        property_set("ro.build.description", "comancheuc-user 4.1.2 JZO54K I547UCCMH5 release-keys");
+        property_set("ro.product.device", "comanche");
+        property_set("ro.product.model", "SAMSUNG-SGH-I547");
     }
 
     property_get("ro.product.device", device);
