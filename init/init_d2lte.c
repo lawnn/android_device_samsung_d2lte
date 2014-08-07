@@ -118,6 +118,7 @@ void vendor_load_properties()
         property_set("ro.build.description", "d2vzw-user 4.4.2 KOT49H I535VRUDNE1 release-keys");
         property_set("ro.product.model", "SCH-I535");
         property_set("ro.product.device", "d2vzw");
+        property_set("ro.com.google.clientidbase", "android-verizon");
     } else if (strstr(bootloader, "SC06D")) {
         /* d2dcm */
         gsm_properties();
