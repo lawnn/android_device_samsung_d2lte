@@ -26,13 +26,13 @@
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/d2lte/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2att,d2spr,d2spi,d2tfnspr,d2tmo,d2cri,d2mtr,d2usc,d2vmu,d2vzw,d2lte,d2can
+TARGET_OTA_ASSERT_DEVICE := d2att,d2spr,d2spi,d2tfnspr,d2tmo,d2cri,d2mtr,d2usc,d2vmu,d2vzw,d2dcm,d2lte,d2can
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogen_d2_defconfig
+TARGET_KERNEL_CONFIG        := cyanogen_d2dcm_defconfig
 
 # Audio
 BOARD_HAVE_AUDIENCE_A2220 := true
