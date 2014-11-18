@@ -85,6 +85,8 @@ void vendor_load_properties()
         property_set("telephony.lteOnGsmDevice", "1");
         property_set("ro.telephony.default_network", "9");
         property_set("ro.ril.enable.dcm.feature", "1");
+        property_set("ro.product.locale.language", "ja");
+        property_set("ro.product.locale.region", "JP");
         property_set("ro.config.libemoji", "libemoji_docomo.so");
     }  else if (strstr(bootloader, "R530M")) {
         /* d2mtr */
